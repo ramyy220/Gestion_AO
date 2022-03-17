@@ -1,0 +1,345 @@
+/*   color variables */
+/*   border radius */
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #2e4775, #EB8CC2);
+  font-family: Mukta, sans-serif;
+  font-size: 0.9rem;
+  height: 135vh;
+  
+}
+
+.headerr {
+  background: rgba(0, 0, 255, 0);
+  display: block;
+  height: 200px;
+  padding: 10px;
+  width: 100%;
+}
+
+img {
+  border-radius: 100%;
+  height: 8% ;  
+  margin-left: 20px;
+  width: 8%;  
+}
+
+.gtp{
+  color: white;
+  font-family: Mukta, sans-serif;
+  font-style: oblique;
+  height:fit-content;
+  width:fit-content;
+}
+
+.iso {
+  color: white;
+  font-family: Mukta, sans-serif;
+  font-size: small;
+  font-style: italic;
+  height:fit-content;
+  margin-right: unset;
+  width:fit-content;
+}
+
+.logout {
+  background-color: white;
+  border-color: white;
+  border-radius: 30px;
+  border-style: solid;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  float: right;
+  margin-right: 20px;
+  margin-top: 80px;
+  padding: 7px;
+}
+
+.logout p {
+  color: black;
+  float: left; 
+  font-family: Mukta, sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.logout a {
+  color: #2e4775;
+  font-family: Mukta, sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.logout a:hover {
+  color: #71b7e6;
+}
+
+.dropdwn {
+  background: rgba(255, 255, 255, 0.3);
+  height: 35px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  
+}
+
+.dropdwn ul{
+  float: left;
+  margin-right: 30px;
+  list-style: none;
+  display: inline-flex;
+}
+
+.dropdwn ul li {
+  margin-left: 20px;
+  position: relative;
+  width: auto;
+  z-index: 1;
+  transition-duration: 0.4s;
+}
+
+.active, .dropdwn ul li:hover {
+  background: rgba(235,140,194, 0.7);
+  border-radius: 3px;
+}
+
+.dropdwn ul li a{
+  display: block;
+  padding: 0 15px;
+  color: white;
+  text-decoration: none;
+  line-height: 35px;
+  font-size: 15px;
+}
+
+.sub_menu {
+  display: none;
+  width: max-content;
+}
+
+.fa-angle-down {
+  float: right;
+  color: white;
+  margin-top: 11px;
+  margin-left: 0;
+}
+
+.fa-angle-right {
+  float: right;
+  color: white;
+  margin-top: 11px;
+}
+
+.dropdwn ul li:hover .sub_menu {
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  margin-top: 2px;
+  margin-left: 0;
+}
+
+.dropdwn ul li:hover .sub_menu ul{
+  display: block;
+  margin: 10px;
+}
+
+.dropdwn ul li:hover .sub_menu ul li {
+  padding: 0;
+  width: 134px;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.dropdwn ul li:hover .sub_menu ul li a:hover {
+  color: #fff;
+}
+
+.sub_menu2 {
+  display: none;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  height: fit-content;
+}
+
+.sub_menu2 ul {
+  padding: 0;
+  transition-duration: 0.4s;
+}
+
+.sub_menu2 ul:hover {
+  background: rgba(235,140,194, 0.7);
+  border-radius: 3px;
+}
+
+.hover-me:hover .sub_menu2 {
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 162px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.content {
+  margin-top: 40px;
+  background: rgba(0, 0, 255, 0);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.container {
+  display: inline-block;
+  padding: 10px;
+  width: 1000px;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: white;
+  border-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.container .title {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+
+}
+
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+
+.container a {
+  margin-left: 580px;
+  color: black;
+  font-family: Mukat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  transition-duration: 0.4s;
+  position: absolute;
+  margin-top: 70px;
+}
+
+.container a:hover {
+  color: #71b7e6;
+}
+
+
+.tab {
+  
+  background-color: white;
+  margin-top: 100px;
+  box-shadow: 0 5px 10px #e1e5ee;
+  display: block;
+  overflow-x: auto;
+  text-align: left;
+  position: absolute;
+  margin-right: 10px;
+  margin-left: 35px;
+  width: 900px;
+  
+}
+
+
+.tab thead {
+  box-shadow: 0 5px 10px #e1e5ee;
+}
+
+.tab tbody {
+  height: 300px;
+  width: auto;
+  overflow-y: scroll;
+  display: block;
+}
+
+table {
+  width:auto;
+  overflow-y: auto;
+  table-layout: fixed;
+}
+
+.tab th {
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  padding: 0.4rem 1rem;
+  text-transform: uppercase;
+
+}
+.tab td {
+  padding: 0.4rem 1.5rem;
+  word-wrap: break-word;
+}
+
+
+
+.tab a {
+  color: #2962ff;
+  text-decoration: none;
+}
+
+.tab tr:nth-child(even) {
+  background-color: #f4f6fb;
+}
+
+.tab button {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background: transparent;
+  transition-duration: 0.4s;
+}
+
+.tab .edit button:hover {
+  color: #2962ff;
+  cursor:pointer;
+}
+
+.tab .delete button:hover {
+  color:red;
+  cursor:pointer;
+}
+
+.tab .consult button:hover {
+  color: limegreen;
+  cursor: pointer;
+}
